@@ -9,6 +9,8 @@ requires 'Acme::CPANAuthors::Korean';
 requires 'Acme::CPANAuthors::Portuguese';
 requires 'Acme::CPANAuthors::Dutch';
 requires 'Module::CoreList';
+requires 'CPAN::DistnameInfo';
+requires 'Devel::GlobalDestruction';
 
 tests 't/*.t';
 author_tests 'xt';
