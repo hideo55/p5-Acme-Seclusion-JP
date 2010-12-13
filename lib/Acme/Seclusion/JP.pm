@@ -24,16 +24,15 @@ my $COMPLETE = 0;
 my $UA;
 my %DIST_CACHE;
 
-my ( @ids_jp, @ids_cn, @ids_kr, @ids_nl, @ids_pt, @ids_all );
+my ( @ids_jp, @ids_cn, @ids_kr, @ids_nl, @ids_all );
 
 BEGIN {
 	@ids_jp = Acme::CPANAuthors->new('Japanese')->id;
 	@ids_cn = Acme::CPANAuthors->new('Chinese')->id;
 	@ids_kr = Acme::CPANAuthors->new('Korean')->id;
 	@ids_nl = Acme::CPANAuthors->new('Dutch')->id;
-	@ids_pt = Acme::CPANAuthors->new('Portuguese')->id;
 
-	@ids_all = ( @ids_jp, @ids_cn, @ids_kr, @ids_nl, @ids_pt );
+	@ids_all = ( @ids_jp, @ids_cn, @ids_kr, @ids_nl );
 
 	$UA = LWP::UserAgent->new(
 		parse_head => 0,
@@ -109,7 +108,7 @@ Acme::Seclusion::JP - Sakoku
 =head1 DESCRIPTION
 
 Acme::Seclusion::JP enforce the policy that similar to the seclusion policy of Japan of Edo period.
-You can use only modules that made in Japan, China, Korea, Netherlands and Portuguese.
+You can use only modules that made in Japan, China, Korea and Netherlands.
 
 =head1 AUTHOR
 

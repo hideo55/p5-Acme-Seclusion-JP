@@ -6,7 +6,6 @@ requires 'Acme::CPANAuthors';
 requires 'Acme::CPANAuthors::Japanese';
 requires 'Acme::CPANAuthors::Chinese';
 requires 'Acme::CPANAuthors::Korean';
-requires 'Acme::CPANAuthors::Portuguese';
 requires 'Acme::CPANAuthors::Dutch';
 requires 'Module::CoreList';
 requires 'CPAN::DistnameInfo';
