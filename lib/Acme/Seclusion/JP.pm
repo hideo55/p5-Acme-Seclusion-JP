@@ -18,7 +18,7 @@ use IO::Select;
 use IO::Uncompress::Gunzip;
 use HTTP::Headers::Util;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 my $COMPLETE = 0;
 my $UA;
@@ -42,6 +42,8 @@ BEGIN {
 	);
 
 	unshift @INC, ( bless {}, __PACKAGE__ );
+	Internals::SvREADONLY($_,1) for @INC;
+	Internals::SvREADONLY(@INC,1);
 }
 
 sub Acme::Seclusion::JP::INC {

@@ -1,4 +1,7 @@
 Revision history for Perl extension Acme::Seclusion::JP
 
+0.02    Wed Dec 15 2010
+        - use Internals::SvREADONLY()
+
 0.01    Sun Dec  8 14:23:23 2010
         - original version
